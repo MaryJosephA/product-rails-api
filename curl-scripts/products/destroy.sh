@@ -1,6 +1,10 @@
 #!/bin/bash
 
-curl --include --request DELETE "http://localhost:4741/products/${ID}" \
+curl  "http://localhost:4741/products/${ID}" \
+--include \
+--request DELETE \
+--header "Content-Type: application/json" \
+--header "Authorization: Token token=${TOKEN}"
 
 
 # curl --include --request POST 'http://localhost:4741/doctors' \

@@ -17,10 +17,11 @@ class ProductsController < ProtectedController
 
   # POST /products
   def create
-    @product = Product.new(product_params)
+    @product = current_user.products.build(product_params)
+    # @product = Product.new(product_params)
 
     if @product.save
-      render json: @product, status: :created, location: @product
+      render json: @product, status: :created
     else
       render json: @product.errors, status: :unprocessable_entity
     end
@@ -44,7 +45,8 @@ class ProductsController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_product
-    @product = Product.find(params[:id])
+    @product = current_user.products.find(params[:id])
+     # @product = Product.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
