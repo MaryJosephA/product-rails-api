@@ -12,6 +12,10 @@ class ProductsController < ProtectedController
 
   # GET /products/1
   def show
+    # render json: products.find(params[:id])
+
+   @products = current_user.products
+
     render json: @product
   end
 
@@ -46,7 +50,7 @@ class ProductsController < ProtectedController
   # Use callbacks to share common setup or constraints between actions.
   def set_product
     @product = current_user.products.find(params[:id])
-     # @product = Product.find(params[:id])
+    # @product = Product.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
