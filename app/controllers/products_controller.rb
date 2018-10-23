@@ -14,7 +14,7 @@ class ProductsController < ProtectedController
   def show
     # render json: products.find(params[:id])
 
-   @products = current_user.products
+    @product = current_user.products
 
     render json: @product
   end
