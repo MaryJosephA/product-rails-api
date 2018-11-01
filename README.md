@@ -2,7 +2,13 @@ Rails[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44
 
 # Pantry List
 Below is the url where the application is hosted
-https://enigmatic-plains-70569.herokuapp.com/
+[product-client Repo](https://github.com/MaryJosephA/product-client)
+
+[product-client Deployed](https://maryjosepha.github.io/product-client/)
+
+[product-rails-api Repo](https://github.com/MaryJosephA/product-rails-api)
+
+[product-rails-api Deployed](https://enigmatic-plains-70569.herokuapp.com/)
 
 ## Technologies
 HTML, CSS, BOOTSTARP JAVASCRIPT, WEB API RESTFUL SERVICE, RUBY ON RAILS
@@ -43,9 +49,9 @@ HTML, CSS, BOOTSTARP JAVASCRIPT, WEB API RESTFUL SERVICE, RUBY ON RAILS
 1. Will add Join table to see which user has products
 2. Will migrate to many to many relationship
 
-## WireFrame WireFrame https://github.com/MaryJosephA/product-client/tree/master/public/wireframe.JPG
+## [WireFrame] WireFrame https://github.com/MaryJosephA/product-client/tree/master/public/wireframe.JPG
 
-## Product Table  https://github.com/MaryJosephA/product-client/tree/master/public/table.JPG
+## [Product Table] Product Table  https://github.com/MaryJosephA/product-rails-api/tree/master/public/table.JPG
 
 ## [License](LICENSE)
 
